@@ -1,0 +1,51 @@
+@charset "UTG-8";
+/* CSS Document */
+
+.responsiveSlider_sliderContainer{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.responsiveSlider_ul{
+    margin: 0px;
+    padding: 0px;
+}
+.responsiveSlider_Li{
+    float: left;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.responsiveSlider_buttonBar{
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+    z-index: 150;
+}
+.responsiveSlider_buttonBar ul{
+    background-color: rgba(255,255,255,0.6);
+    padding: 3px 12px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    height: 16px;
+}
+.responsiveSlider_buttonBar ul li{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.responsiveSlider_buttonBar ul li:first-child{
+    margin-left:0px;
+}
+.responsiveSlider_buttonBar ul li.active{
+    background-color: #666;
+}
+.responsiveSlider_buttonBar ul li:hover{
+    background-color: #666;
+}

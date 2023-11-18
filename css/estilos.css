@@ -1,0 +1,187 @@
+/*
+organización básica del HTML
+*/
+
+/* elementos globales */
+html, body{
+    font-family: Arial, sans-serif;
+    color: #666666;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+h1, h2, h3, h4, h5 {
+    color: #333333;
+}
+h1{
+    font-size: 22px;
+     margin: 0px;
+    padding: 0px;
+}
+
+/* estructura principal  del contenido */
+header {
+    background-color: #F5A300;
+    padding: 6px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    height: 35px;
+}
+header h1{
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+#main_wrapper {
+    min-height: 100%;
+    position: relative;
+}
+footer{
+    background-color: #5F5C74;
+    color: #ffffff;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+
+/* estructura de los contenidos */
+
+#main_container {
+    padding-bottom: 50px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+.decorador{
+    width: 100%;
+    height: 20px;
+    background-color: #333333;
+    margin: 30px 0px;
+}
+
+
+.colIzda {
+    width: 30%;
+    display: inline-block;
+    margin: 0px;
+    padding: 1%;
+    vertical-align: top;
+}
+
+.colDha {
+    width: 63%;
+    display: inline-block;
+    margin: 2%;
+    padding: 0px;
+    vertical-align: top;
+}
+
+
+
+/*
+estilos para los contenidos del slider principal 
+*/
+.slideH_init{
+    position: relative;
+    overflow: hidden;
+}
+.slideH_init p{
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(255,255,255,0.75);
+    padding: 10px 20px;
+    color: #000000;
+}
+.slideH_init img{
+    width: 100%
+}
+
+
+
+
+/*
+estilos para los contenidos del slider lateral 
+*/
+.slideV_init{
+    position: relative;
+    overflow: hidden;
+}
+.slideV_init h2{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.75);
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 100;
+}
+.slideV_init img{
+    width: 100%
+}
+
+/*
+estilo de la botonera lateral
+*/
+
+.botoneraSec{
+    top: 5px;
+}
+.botoneraSec ul{
+    background-color: rgba(0,0,0,0);
+    height: 16px;
+}
+.botoneraSec ul li{
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #dddd;
+
+}
+
+
+
+
+@media (max-width: 480px) {
+    .colIzda {
+        width: 100%;
+        display: block;
+    }
+    .colDha {
+        width: 100%;
+    }
+    .slideH_init p{
+        font-size: 13px;
+        height: 40px;
+        overflow-y: auto;
+    }
+}
+@media (min-width: 481px) and (max-width: 640px) {
+    .colIzda {
+        width: 40%;
+    }
+    .colDha {
+        width: 53%;
+    }
+    .slideH_init p{
+        font-size: 14px;
+    }
+}
+
+
+
